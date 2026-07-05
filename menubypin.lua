@@ -262,29 +262,30 @@ local CloseBtn = CreateButton("CloseBtn", "ĐÓNG PIN HUB", Color3.fromRGB(170, 
 end)
 
 ---------------------------------------------------------
--- HÀM ĐỔI KÍCH CỠ ĐỒNG BỘ
+-- HÀM ĐỔI KÍCH CỠ ĐỒNG BỘ (ĐÃ MỞ KHÓA THU NHỎ VÔ HẠN)
 ---------------------------------------------------------
 local function ChangeMenuSize(scaleChange)
-    currentScale = math.clamp(currentScale + scaleChange, 0, 1.6)
+    -- Thay đổi 0.7 thành 0.05 để cho phép thu nhỏ vô hạn
+    currentScale = math.clamp(currentScale + scaleChange, 0.05, 1.6)
     MainFrame.Size = UDim2.new(0, 300 * currentScale, 0, 310 * currentScale)
     
-    Title.TextSize = math.floor(16 * currentScale)
-    ZoomInBtn.TextSize = math.floor(16 * currentScale)
-    ZoomOutBtn.TextSize = math.floor(16 * currentScale)
+    Title.TextSize = math.max(1, math.floor(16 * currentScale))
+    ZoomInBtn.TextSize = math.max(1, math.floor(16 * currentScale))
+    ZoomOutBtn.TextSize = math.max(1, math.floor(16 * currentScale))
     
     SpeedInput.Size = UDim2.new(0, 62 * currentScale, 0, 38 * currentScale)
     SpeedInput.Position = UDim2.new(0.74, 0, 0, 45 * currentScale)
-    SpeedInput.TextSize = math.floor(14 * currentScale)
+    SpeedInput.TextSize = math.max(1, math.floor(14 * currentScale))
     
     SpeedBtn.Size = UDim2.new(0, 195 * currentScale, 0, 38 * currentScale)
     SpeedBtn.Position = UDim2.new(0.05, 0, 0, 45 * currentScale)
-    SpeedBtn.TextSize = math.floor(13 * currentScale)
+    SpeedBtn.TextSize = math.max(1, math.floor(13 * currentScale))
     
     local buttons = { {FlingBtn, 93}, {ShiftBtn, 141}, {LagBtn, 189}, {CloseBtn, 240} }
     for _, item in pairs(buttons) do
         item[1].Size = UDim2.new(0, 270 * currentScale, 0, 38 * currentScale)
         item[1].Position = UDim2.new(0.05, 0, 0, item[2] * currentScale)
-        item[1].TextSize = math.floor(13 * currentScale)
+        item[1].TextSize = math.max(1, math.floor(13 * currentScale))
     end
 end
 
