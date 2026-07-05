@@ -35,7 +35,7 @@ Title.Parent = MainFrame
 Title.BackgroundTransparency = 1
 Title.Size = UDim2.new(1, 0, 0, 40)
 Title.Font = Enum.Font.SourceSansBold
-Title.Text = "Pin Speed Bypass (Xeno)"
+Title.Text = "anti reset speed by pin "
 Title.TextColor3 = Color3.fromRGB(255, 255, 255)
 Title.TextSize = 18
 
@@ -46,7 +46,7 @@ SpeedInput.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
 SpeedInput.Position = UDim2.new(0.1, 0, 0.25, 0)
 SpeedInput.Size = UDim2.new(0.8, 0, 0, 35)
 SpeedInput.Font = Enum.Font.SourceSans
-SpeedInput.PlaceholderText = "Nhập tốc độ... (VD: 100)"
+SpeedInput.PlaceholderText = "speed number..."
 SpeedInput.Text = ""
 SpeedInput.TextColor3 = Color3.fromRGB(255, 255, 255)
 SpeedInput.TextSize = 16
@@ -58,7 +58,7 @@ ApplyBtn.BackgroundColor3 = Color3.fromRGB(0, 150, 70)
 ApplyBtn.Position = UDim2.new(0.1, 0, 0.52, 0)
 ApplyBtn.Size = UDim2.new(0.8, 0, 0, 30)
 ApplyBtn.Font = Enum.Font.SourceSansBold
-ApplyBtn.Text = "ÁP DỤNG + KHÓA TỐC ĐỘ"
+ApplyBtn.Text = "Apply+lock speed"
 ApplyBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
 ApplyBtn.TextSize = 15
 
@@ -69,7 +69,7 @@ ResetBtn.BackgroundColor3 = Color3.fromRGB(150, 30, 30)
 ResetBtn.Position = UDim2.new(0.1, 0, 0.75, 0)
 ResetBtn.Size = UDim2.new(0.8, 0, 0, 30)
 ResetBtn.Font = Enum.Font.SourceSansBold
-ResetBtn.Text = "TẮT BYPASS + RESET (16)"
+ResetBtn.Text = "rest speed"
 ResetBtn.TextColor3 = Color3.fromRGB(255, 255, 255)
 ResetBtn.TextSize = 14
 
