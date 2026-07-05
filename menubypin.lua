@@ -265,7 +265,7 @@ end)
 -- HÀM ĐỔI KÍCH CỠ ĐỒNG BỘ
 ---------------------------------------------------------
 local function ChangeMenuSize(scaleChange)
-    currentScale = math.clamp(currentScale + scaleChange, 0.7, 1.6)
+    currentScale = math.clamp(currentScale + scaleChange, 0, 1.6)
     MainFrame.Size = UDim2.new(0, 300 * currentScale, 0, 310 * currentScale)
     
     Title.TextSize = math.floor(16 * currentScale)
